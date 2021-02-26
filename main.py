@@ -14,7 +14,11 @@ class MyServer(http.server.SimpleHTTPRequestHandler):
         query = urllib.parse.parse_qs(parsed_path.query)
         link = query['url'][0]
 
-        driver = webdriver.Chrome('./chromedriver')
+        chrome_options = Options()
+        chrome_options.add_argument('--headless')
+        chrome_options.add_argument('--no-sandbox')
+        chrome_options.add_argument('--disable-dev-shm-usage')
+        driver = webdriver.Chrome('./chromedriver', options=chrome_options)
         driver.get(
             link)
         source = driver.page_source
@@ -36,6 +40,9 @@ with socketserver.TCPServer(("", PORT), Handler) as httpd:
 # pip install selenium
 #sudo apt-get update
 #sudo apt install python3-pip
+#sudo apt-get install -y chromium-browser
+
+
 
 #ignore this
 # from xvfbwrapper import Xvfb
