@@ -1,6 +1,5 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from xvfbwrapper import Xvfb
 import urllib, json
 
 import http.server
@@ -33,8 +32,14 @@ with socketserver.TCPServer(("", PORT), Handler) as httpd:
     print("serving at port", PORT)
     httpd.serve_forever()
 
+
+# pip install selenium
+#sudo apt-get update
+#sudo apt install python3-pip
+
+#ignore this
+# from xvfbwrapper import Xvfb
 # sudo apt-get install xvfb
 # display = Xvfb()
 # display.start()
-# pip install selenium
 # pip install xvfbwrapper
