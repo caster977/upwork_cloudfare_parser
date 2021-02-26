@@ -1,11 +1,12 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import urllib, json
+from xvfbwrapper import Xvfb
 
 import http.server
 import socketserver
 
-PORT = 8003
+PORT = 8004
 
 
 class MyServer(http.server.SimpleHTTPRequestHandler):
@@ -13,12 +14,9 @@ class MyServer(http.server.SimpleHTTPRequestHandler):
         parsed_path = urllib.parse.urlsplit(self.path)
         query = urllib.parse.parse_qs(parsed_path.query)
         link = query['url'][0]
-
-        chrome_options = Options()
-        chrome_options.add_argument('--headless')
-        chrome_options.add_argument('--no-sandbox')
-        chrome_options.add_argument('--disable-dev-shm-usage')
-        driver = webdriver.Chrome('./chromedriver', options=chrome_options)
+        display = Xvfb()
+        display.start()
+        driver = webdriver.Chrome('./chromedriver')
         driver.get(
             link)
         source = driver.page_source
@@ -41,12 +39,11 @@ with socketserver.TCPServer(("", PORT), Handler) as httpd:
 #sudo apt-get update
 #sudo apt install python3-pip
 #sudo apt-get install -y chromium-browser
-
+#sudo apt-get install xvfb
+# pip install xvfbwrapper
 
 
 #ignore this
-# from xvfbwrapper import Xvfb
-# sudo apt-get install xvfb
-# display = Xvfb()
-# display.start()
-# pip install xvfbwrapper
+#
+#
+
