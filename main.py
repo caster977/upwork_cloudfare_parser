@@ -1,6 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-import urllib, json
+import urllib
 from xvfbwrapper import Xvfb
 
 import http.server
@@ -8,19 +8,19 @@ import socketserver
 
 PORT = 8004
 
+display = Xvfb()
+display.start()
+driver = webdriver.Chrome('drivers/chromedriver')
+
 
 class MyServer(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
+        driver.delete_all_cookies()
         parsed_path = urllib.parse.urlsplit(self.path)
         query = urllib.parse.parse_qs(parsed_path.query)
         link = query['url'][0]
-        display = Xvfb()
-        display.start()
-        driver = webdriver.Chrome('./chromedriver')
-        driver.get(
-            link)
+        driver.get(link)
         source = driver.page_source
-        driver.quit()
         self.send_response(200)
         self.send_header("Content-type", "application/json")
         self.end_headers()
@@ -32,18 +32,8 @@ Handler = MyServer
 
 with socketserver.TCPServer(("", PORT), Handler) as httpd:
     print("serving at port", PORT)
-    httpd.serve_forever()
-
-
-# pip install selenium
-#sudo apt-get update
-#sudo apt install python3-pip
-#sudo apt-get install -y chromium-browser
-#sudo apt-get install xvfb
-# pip install xvfbwrapper
-
-
-#ignore this
-#
-#
-
+    try:
+        httpd.serve_forever()
+    except KeyboardInterrupt:
+        driver.quit()
+        pass

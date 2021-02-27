@@ -1,0 +1,34 @@
+1614432921612	geckodriver	INFO	Listening on 127.0.0.1:59369
+1614432922609	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileVQd3LI"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614432926465	Marionette	INFO	Listening on port 33237
+1614432926547	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+Gdk-Message: 15:45:41.902: firefox: Fatal IO error 11 (Ресурс временно недоступен) on X server :506495786.
+
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1614434433454	geckodriver	INFO	Listening on 127.0.0.1:50389
+1614434434458	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilel7ruX6"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614434438361	Marionette	INFO	Listening on port 38937
+1614434438406	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1614434514023	geckodriver	INFO	Listening on 127.0.0.1:53997
+1614434514031	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileK1pESI"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614434517853	Marionette	INFO	Listening on port 42861
+1614434517984	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614434526446	geckodriver	INFO	Listening on 127.0.0.1:44543
+1614434526453	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileR58lfu"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614434529837	Marionette	INFO	Listening on port 39969
+1614434529898	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614434587667	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1614434596302	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1614434609033	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1614434638104	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
