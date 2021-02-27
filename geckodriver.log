@@ -32,3 +32,278 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1614434596302	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
 1614434609033	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
 1614434638104	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1614435094358	geckodriver	INFO	Listening on 127.0.0.1:49761
+1614435095363	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileW8JlP3"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614435099150	Marionette	INFO	Listening on port 33809
+1614435099218	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614435117859	Marionette	INFO	Stopped listening on port 33809
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript error: https://assets.adobedtm.com/extensions/EP308220a2a4c4403f97fc1960100db40f/AppMeasurement.min.js, line 2: NS_ERROR_NOT_INITIALIZED: 
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1614435143466	geckodriver	INFO	Listening on 127.0.0.1:54107
+1614435143473	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilefZEcu7"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614435146599	Marionette	INFO	Listening on port 35055
+1614435146784	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614435152163	geckodriver	INFO	Listening on 127.0.0.1:46779
+1614435152170	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilerE0F1N"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614435154784	Marionette	INFO	Listening on port 41427
+1614435154914	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1614437991924	geckodriver	INFO	Listening on 127.0.0.1:47857
+1614437991943	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiled9cjJA"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614437995461	Marionette	INFO	Listening on port 45167
+1614437995579	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1614438103075	geckodriver	INFO	Listening on 127.0.0.1:55141
+1614438104082	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilefvqAXC"
+*** You are running in headless mode.
+
+(/usr/lib/firefox/firefox:41243): GLib-GObject-CRITICAL **: 17:01:45.143: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:41257): GLib-GObject-CRITICAL **: 17:01:45.291: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:41337): GLib-GObject-CRITICAL **: 17:01:46.635: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1614438106648	Marionette	INFO	Listening on port 36535
+1614438106711	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1614438254445	geckodriver	INFO	Listening on 127.0.0.1:56465
+1614438254450	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile0vKvcf"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614438257416	Marionette	INFO	Listening on port 45167
+1614438257515	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1614438294438	geckodriver	INFO	Listening on 127.0.0.1:43665
+1614438294446	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilefgREJe"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614438297168	Marionette	INFO	Listening on port 42651
+1614438297287	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614438305079	geckodriver	INFO	Listening on 127.0.0.1:34637
+1614438306087	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileIpYRpG"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614438308954	Marionette	INFO	Listening on port 33935
+1614438309025	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1614438382866	geckodriver	INFO	Listening on 127.0.0.1:34825
+1614438382873	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileuOt1PC"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614438385886	Marionette	INFO	Listening on port 44191
+1614438386044	Marionette	WARN	TLS certificate errors will be ignored for this session
+Gdk-Message: 17:07:13.309: /usr/lib/firefox/firefox: Fatal IO error 11 (Ресурс временно недоступен) on X server :1895741997.
+
+Exiting due to channel error.
+Exiting due to channel error.
+1614438433684	geckodriver	INFO	Listening on 127.0.0.1:57087
+1614438434686	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileurPle2"
+*** You are running in headless mode.
+
+(/usr/lib/firefox/firefox:44260): GLib-GObject-CRITICAL **: 17:07:15.673: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:44274): GLib-GObject-CRITICAL **: 17:07:15.739: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614438436917	Marionette	INFO	Listening on port 34675
+1614438437027	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:44338): GLib-GObject-CRITICAL **: 17:07:17.028: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+JavaScript warning: https://tile.cycletrader.com/prod/static/avbt-main.js, line 9: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://tile.cycletrader.com/prod/static/avbt-main.js, line 9: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://tile.cycletrader.com/prod/static/avbt-main.js, line 9: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://tile.cycletrader.com/prod/static/avbt-main.js, line 9: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://tile.cycletrader.com/prod/static/avbt-main.js, line 9: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://tile.cycletrader.com/prod/static/avbt-main.js, line 9: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://tile.cycletrader.com/prod/static/avbt-main.js, line 9: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://tile.cycletrader.com/prod/static/avbt-main.js, line 9: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9RdNy2KfqE70k7Ep5pIJEFWQRxy4C7JCE7EP5OBJOVg.js line 1 > eval line 2614 > eval line 1 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9RdNy2KfqE70k7Ep5pIJEFWQRxy4C7JCE7EP5OBJOVg.js line 1 > eval line 2614 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9RdNy2KfqE70k7Ep5pIJEFWQRxy4C7JCE7EP5OBJOVg.js line 1 > eval line 5052 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9RdNy2KfqE70k7Ep5pIJEFWQRxy4C7JCE7EP5OBJOVg.js line 1 > eval line 5052 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9RdNy2KfqE70k7Ep5pIJEFWQRxy4C7JCE7EP5OBJOVg.js line 1 > eval line 2088 > eval line 1 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9RdNy2KfqE70k7Ep5pIJEFWQRxy4C7JCE7EP5OBJOVg.js line 1 > eval line 2088 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9RdNy2KfqE70k7Ep5pIJEFWQRxy4C7JCE7EP5OBJOVg.js line 1 > eval line 1853 > eval line 1 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9RdNy2KfqE70k7Ep5pIJEFWQRxy4C7JCE7EP5OBJOVg.js line 1 > eval line 1853 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9RdNy2KfqE70k7Ep5pIJEFWQRxy4C7JCE7EP5OBJOVg.js line 1 > eval line 2216 > eval line 1 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9RdNy2KfqE70k7Ep5pIJEFWQRxy4C7JCE7EP5OBJOVg.js line 1 > eval line 2216 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9RdNy2KfqE70k7Ep5pIJEFWQRxy4C7JCE7EP5OBJOVg.js line 1 > eval line 840 > eval line 1 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9RdNy2KfqE70k7Ep5pIJEFWQRxy4C7JCE7EP5OBJOVg.js line 1 > eval line 840 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://tile.cycletrader.com/prod/static/avbt-main.js, line 9: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://tile.cycletrader.com/prod/static/avbt-main.js, line 9: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://tile.cycletrader.com/prod/static/avbt-main.js, line 9: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://tile.cycletrader.com/prod/static/avbt-main.js, line 9: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://tile.cycletrader.com/prod/static/avbt-main.js, line 9: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://tile.cycletrader.com/prod/static/avbt-main.js, line 9: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://tile.cycletrader.com/prod/static/avbt-main.js, line 9: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://tile.cycletrader.com/prod/static/avbt-main.js, line 9: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9RdNy2KfqE70k7Ep5pIJEFWQRxy4C7JCE7EP5OBJOVg.js line 1 > eval line 7281 > eval line 1 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9RdNy2KfqE70k7Ep5pIJEFWQRxy4C7JCE7EP5OBJOVg.js line 1 > eval line 7281 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9RdNy2KfqE70k7Ep5pIJEFWQRxy4C7JCE7EP5OBJOVg.js line 1 > eval line 3206 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9RdNy2KfqE70k7Ep5pIJEFWQRxy4C7JCE7EP5OBJOVg.js line 1 > eval line 3206 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9RdNy2KfqE70k7Ep5pIJEFWQRxy4C7JCE7EP5OBJOVg.js line 1 > eval line 4403 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9RdNy2KfqE70k7Ep5pIJEFWQRxy4C7JCE7EP5OBJOVg.js line 1 > eval line 4403 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9RdNy2KfqE70k7Ep5pIJEFWQRxy4C7JCE7EP5OBJOVg.js line 1 > eval line 6661 > eval line 1 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9RdNy2KfqE70k7Ep5pIJEFWQRxy4C7JCE7EP5OBJOVg.js line 1 > eval line 6661 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9RdNy2KfqE70k7Ep5pIJEFWQRxy4C7JCE7EP5OBJOVg.js line 1 > eval line 4862 > eval line 1 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9RdNy2KfqE70k7Ep5pIJEFWQRxy4C7JCE7EP5OBJOVg.js line 1 > eval line 4862 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9RdNy2KfqE70k7Ep5pIJEFWQRxy4C7JCE7EP5OBJOVg.js line 1 > eval line 488 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9RdNy2KfqE70k7Ep5pIJEFWQRxy4C7JCE7EP5OBJOVg.js line 1 > eval line 488 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9RdNy2KfqE70k7Ep5pIJEFWQRxy4C7JCE7EP5OBJOVg.js line 1 > eval line 6431 > eval line 1 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9RdNy2KfqE70k7Ep5pIJEFWQRxy4C7JCE7EP5OBJOVg.js line 1 > eval line 6431 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1614438494355	geckodriver	INFO	Listening on 127.0.0.1:33513
+1614438494366	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile3duzkp"
+*** You are running in headless mode.
+
+(/usr/lib/firefox/firefox:44899): GLib-GObject-CRITICAL **: 17:08:15.586: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:44913): GLib-GObject-CRITICAL **: 17:08:15.705: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614438497040	Marionette	INFO	Listening on port 43725
+
+(/usr/lib/firefox/firefox:44978): GLib-GObject-CRITICAL **: 17:08:17.044: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1614438497101	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+1614438597530	geckodriver	INFO	Listening on 127.0.0.1:34171
+1614438598531	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilea16Vtc"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614438601923	Marionette	INFO	Listening on port 44619
+1614438601963	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614438644517	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1614438644521	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://b1e95b51f1eaebb3b4332f3e066c26c8.safeframe.googlesyndication.com/safeframe/1-0-37/html/container.html, line 22: ReferenceError: r3px is not defined
+JavaScript error: https://b1e95b51f1eaebb3b4332f3e066c26c8.safeframe.googlesyndication.com/safeframe/1-0-37/html/container.html, line 22: ReferenceError: r3px is not defined
+1614441202493	geckodriver	INFO	Listening on 127.0.0.1:56543
+1614441203498	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileyPAjpI"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614441208407	Marionette	INFO	Listening on port 41371
+1614441208458	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614441221142	geckodriver	INFO	Listening on 127.0.0.1:57329
+1614441222149	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile35sDPl"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614441226346	Marionette	INFO	Listening on port 37127
+1614441226424	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614442420090	geckodriver	INFO	Listening on 127.0.0.1:51543
+1614442421081	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileZcWxqW"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614442425690	Marionette	INFO	Listening on port 38413
+1614442425745	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614442465595	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1614442465596	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1614442465610	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1614442465623	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+Gdk-Message: 18:16:43.771: /usr/lib/firefox/firefox: Fatal IO error 11 (Ресурс временно недоступен) on X server :1981099481.
+
+Gdk-Message: 18:16:43.770: /usr/lib/firefox/firefox: Fatal IO error 11 (Ресурс временно недоступен) on X server :1981099481.
+
+Gdk-Message: 18:16:43.771: /usr/lib/firefox/firefox: Fatal IO error 11 (Ресурс временно недоступен) on X server :1981099481.
+
+1614442604326	geckodriver	INFO	Listening on 127.0.0.1:42269
+1614442615318	geckodriver	INFO	Listening on 127.0.0.1:51699
+1614442645627	geckodriver	INFO	Listening on 127.0.0.1:46661
+1614442655541	geckodriver	INFO	Listening on 127.0.0.1:57923
+1614442676789	geckodriver	INFO	Listening on 127.0.0.1:51575
+1614442677798	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileuMmrNV"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614442680542	Marionette	INFO	Listening on port 45425
+1614442680625	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614442680628	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"proxy.packetstream.io:31112","sslProxy":"proxy.packetstream.io:31112"}
+1614442689461	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1614442690136	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1614442691782	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1614442692378	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1614442693027	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1614442698742	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1614442699309	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1614442700010	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1614442840195	geckodriver	INFO	Listening on 127.0.0.1:37743
+1614442849402	geckodriver	INFO	Listening on 127.0.0.1:39077
+1614442853782	geckodriver	INFO	Listening on 127.0.0.1:46757
+1614442862437	geckodriver	INFO	Listening on 127.0.0.1:36343
+1614442892009	geckodriver	INFO	Listening on 127.0.0.1:34241
+1614443312099	geckodriver	INFO	Listening on 127.0.0.1:36559
+1614443312103	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiledSrfmK"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614443314782	Marionette	INFO	Listening on port 46583
+1614443314839	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614443314842	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:33105","noProxy":[],"sslProxy":"127.0.0.1:33105"}
+Gdk-Message: 18:29:02.403: /usr/lib/firefox/firefox: Fatal IO error 11 (Ресурс временно недоступен) on X server :142568022.
+
+Sandbox: Unexpected EOF, op 0 flags 02000000 path /etc/localtime
+Gdk-Message: 16:29:02.404: /usr/lib/firefox/firefox: Fatal IO error 11 (Ресурс временно недоступен) on X server :142568022.
+
+Sandbox: Unexpected EOF, op 0 flags 02000000 path /etc/localtime
+Gdk-Message: 16:29:02.403: /usr/lib/firefox/firefox: Fatal IO error 11 (Ресурс временно недоступен) on X server :142568022.
+
+1614443343039	geckodriver	INFO	Listening on 127.0.0.1:52203
+1614443343045	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilek6s6QK"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614443345749	Marionette	INFO	Listening on port 45629
+1614443345809	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614443345818	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:33015","noProxy":[],"sslProxy":"127.0.0.1:33015"}
+1614443351262	geckodriver	INFO	Listening on 127.0.0.1:38953
+1614443351267	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiletPdjQS"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614443354246	Marionette	INFO	Listening on port 44227
+1614443354318	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614443354324	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:43391","noProxy":[],"sslProxy":"127.0.0.1:43391"}
+Exiting due to channel error.
+Exiting due to channel error.
+Sandbox: Unexpected EOF, op 0 flags 02000000 path /etc/localtime
+Gdk-Message: 16:29:27.629: /usr/lib/firefox/firefox: Fatal IO error 11 (Ресурс временно недоступен) on X server :263117743.
+
+1614443733786	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
