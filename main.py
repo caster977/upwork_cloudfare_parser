@@ -5,7 +5,7 @@ from xvfbwrapper import Xvfb
 import http.server
 import socketserver
 
-PORT = 8003
+PORT = 8002
 
 display = Xvfb()
 display.start()
@@ -23,7 +23,7 @@ prefs = {
         'metro_switch_to_desktop': 2,
         'protected_media_identifier': 2, 'app_banner': 2,
         'site_engagement': 2,
-        'durable_storage': 2
+        'durable_storage': 2, 'favicon': 2
     }
 }
 chrome_options.add_experimental_option("prefs", prefs)
@@ -39,15 +39,37 @@ class MyServer(http.server.SimpleHTTPRequestHandler):
         driver.delete_all_cookies()
         parsed_path = urllib.parse.urlsplit(self.path)
         query = urllib.parse.parse_qs(parsed_path.query)
-        link = query['url'][0]
-        driver.get(link)
-        source = driver.page_source
+
+        try:
+            link = query['url'][0]
+        except:
+            self.logError('No link provided')
+            self.send_response(500)
+            self.send_header("Content-type", "application/json")
+            self.end_headers()
+            return
+
+        try:
+            driver.get(link)
+            source = driver.page_source
+        except:
+            print(link)
+            self.logError(link)
+            self.send_response(500)
+            self.send_header("Content-type", "application/json")
+            self.end_headers()
+            return
+
         self.send_response(200)
         self.send_header("Content-type", "application/json")
         self.end_headers()
-
         self.wfile.write(bytes(source, "utf8"))
         print(datetime.now() - start)
+
+    def logError(self, content):
+        f = open('logs/errors.log', 'a')
+        f.write(content + "\n")
+        f.close()
 
 
 Handler = MyServer
