@@ -4,8 +4,10 @@ import urllib
 from xvfbwrapper import Xvfb
 import http.server
 import socketserver
-
-PORT = 8002
+from threading import Thread
+import time
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.keys import Keys
 
 display = Xvfb()
 display.start()
@@ -32,11 +34,36 @@ chrome_options.add_argument("disable-infobars")
 chrome_options.add_argument("--disable-extensions")
 driver = webdriver.Chrome('drivers/chromedriver', options=chrome_options)
 
+count = 0
 
 class MyServer(http.server.SimpleHTTPRequestHandler):
+    def delete_cache(self):
+        driver.execute_script("window.open('');")
+        time.sleep(2)
+        driver.switch_to.window(driver.window_handles[-1])
+        time.sleep(2)
+        driver.get('chrome://settings/clearBrowserData')  # for old chromedriver versions use cleardriverData
+        time.sleep(2)
+        actions = ActionChains(driver)
+        actions.send_keys(Keys.TAB * 3 + Keys.DOWN * 3)  # send right combination
+        actions.perform()
+        time.sleep(2)
+        actions = ActionChains(driver)
+        actions.send_keys(Keys.TAB * 4 + Keys.ENTER)  # confirm
+        actions.perform()
+        time.sleep(5)  # wait some time to finish
+        driver.close()  # close this tab
+        driver.switch_to.window(driver.window_handles[0])  # switch back
+
     def do_GET(self):
+        global count
+
+        if count == 50:
+            print('Cache cleared')
+            count = 0
+            self.delete_cache()
+
         start = datetime.now()
-        driver.delete_all_cookies()
         parsed_path = urllib.parse.urlsplit(self.path)
         query = urllib.parse.parse_qs(parsed_path.query)
 
@@ -60,6 +87,7 @@ class MyServer(http.server.SimpleHTTPRequestHandler):
             self.end_headers()
             return
 
+        count += 1
         self.send_response(200)
         self.send_header("Content-type", "application/json")
         self.end_headers()
@@ -72,12 +100,18 @@ class MyServer(http.server.SimpleHTTPRequestHandler):
         f.close()
 
 
-Handler = MyServer
+def run(port):
+    Handler = MyServer
 
-with socketserver.TCPServer(("", PORT), Handler) as httpd:
-    print("serving at port", PORT)
-    try:
-        httpd.serve_forever()
-    except KeyboardInterrupt:
-        driver.quit()
-        pass
+    with socketserver.TCPServer(("", port), Handler) as httpd:
+        print("serving at port", port)
+        try:
+            httpd.serve_forever()
+        except KeyboardInterrupt:
+            driver.quit()
+            pass
+
+
+PORT = 8006
+
+Thread(target=run, args=(PORT,)).start()
