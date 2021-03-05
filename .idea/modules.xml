@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/parser.iml" filepath="$PROJECT_DIR$/.idea/parser.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/selenium.iml" filepath="$PROJECT_DIR$/.idea/selenium.iml" />
+>>>>>>> afaace1f5da6eb8da8f51a7c2e656b8d1c1daca6
     </modules>
   </component>
 </project>

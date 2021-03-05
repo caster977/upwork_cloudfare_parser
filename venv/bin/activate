@@ -37,7 +37,11 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
+<<<<<<< HEAD
 VIRTUAL_ENV="/home/pavel/PycharmProjects/parser/venv"
+=======
+VIRTUAL_ENV="/home/pavel/PycharmProjects/selenium/venv"
+>>>>>>> afaace1f5da6eb8da8f51a7c2e656b8d1c1daca6
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
