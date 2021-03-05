@@ -54,12 +54,12 @@ class MyServer(http.server.SimpleHTTPRequestHandler):
         time.sleep(5)  # wait some time to finish
         driver.close()  # close this tab
         driver.switch_to.window(driver.window_handles[0])  # switch back
+        print('Cache cleared')
 
     def do_GET(self):
         global count
 
         if count == 50:
-            print('Cache cleared')
             count = 0
             self.delete_cache()
 
