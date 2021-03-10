@@ -5,7 +5,7 @@ from xvfbwrapper import Xvfb
 import http.server
 import socketserver
 
-PORT = 8002
+PORT = 8000
 
 display = Xvfb()
 display.start()
@@ -33,6 +33,23 @@ chrome_options.add_argument("--disable-extensions")
 driver = webdriver.Chrome('drivers/chromedriver', options=chrome_options)
 
 
+def set_proxy(proxy):
+    c = {
+        "proxyType": "Manual",
+        "httpProxy": proxy,
+        "sslProxy": proxy
+    }
+
+    cap = webdriver.DesiredCapabilities.CHROME.copy()
+    cap['proxy'] = c
+    driver.start_session(cap)
+
+
+def clear_proxy():
+    cap = webdriver.DesiredCapabilities.CHROME.copy()
+    driver.start_session(cap)
+
+
 class MyServer(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
         start = datetime.now()
@@ -41,9 +58,15 @@ class MyServer(http.server.SimpleHTTPRequestHandler):
         query = urllib.parse.parse_qs(parsed_path.query)
 
         try:
+            proxy = query['proxy'][0]
+            set_proxy(proxy)
+        except:
+            clear_proxy()
+
+        try:
             link = query['url'][0]
         except:
-            self.logError('No link provided')
+            self.logError('No link provided  ' + self.path)
             self.send_response(500)
             self.send_header("Content-type", "application/json")
             self.end_headers()
@@ -53,15 +76,14 @@ class MyServer(http.server.SimpleHTTPRequestHandler):
             driver.get(link)
             source = driver.page_source
         except:
-            print(link)
-            self.logError(link)
+            self.logError(link + '  ' + self.path)
             self.send_response(500)
             self.send_header("Content-type", "application/json")
             self.end_headers()
             return
 
         self.send_response(200)
-        self.send_header("Content-type", "application/json")
+        self.send_header("Content-type", "text/html")
         self.end_headers()
         self.wfile.write(bytes(source, "utf8"))
         print(datetime.now() - start)
